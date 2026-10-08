@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/register_style.css">
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <h1>Red Register!</h1>
+            <form class="register-form" action="home.html" method="post" enctype="multipart/form-data">
+                
+                <div class="row">   
+                    <label for="username">Name</label>
+                    <input type="text" id="username" name="username" placeholder="ex: RedApple" required>
+                </div>
+
+                <div class="row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="ex: RedApple@sowing.com" required>
+                </div>
+
+                <div class="row two-col">
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm_password">Retype Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="row">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="">Select ...</option>
+                        <option value="RO">Romania</option>
+                        <option value="DE">Germany</option>
+                        <option value="FR">France</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="US">United States</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <label>Hobbies</label>
+                    <div class="checkbox-grid">
+                        <label><input type="checkbox" name="interests" value="gardening"> Gardening</label>
+                        <label><input type="checkbox" name="interests" value="sowing"> Sowing Fields</label>
+                        <label><input type="checkbox" name="interests" value="plantation"> Plantations</label>
+                        <label><input type="checkbox" name="interests" value="solar"> Solar Panels</label>
+                        <label><input type="checkbox" name="interests" value="cabbage"> Cabbage Grinding</label>
+                        <label><input type="checkbox" name="interests" value="wheat"> Wheat Carrying</label>
+                        <label><input type="checkbox" name="interests" value="bucket"> Bucket filling</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="profile_pic">Apple Picture</label>
+                    <input type="file" id="profile_pic" name="profile_pic">
+                </div>
+
+                <div class="row">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" rows="3" placeholder="Tell us a little about your favourite apple fun fact ..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn primary">Register</button>
+                    <button type="reset" class="btn ghost">Reset</button>
+                </div>
+
+                <p class="login-link">
+                    Already have an account? <a href="login.html"> Log In</a>
+                </p>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
