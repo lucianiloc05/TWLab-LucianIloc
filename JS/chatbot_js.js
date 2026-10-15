@@ -20,6 +20,17 @@ let questions = [
         correctAnswer: "a",
         correctResponse: "Excelent! We'll make you a gardener in no time!",
         incorrectResponse: "Nope. But we can try again!"
+    },
+    {
+        question: "How do you pull out the weeds?",
+        options: {
+            a: "You hack it with your scythe",
+            b: "You reach around, twist the stem and pull!",
+            c: "If you close your eyes they'll go away"
+        },
+        correctAnswer: "b",
+        correctResponse: "Excelent! We'll make you a gardener in no time!",
+        incorrectResponse: "Nope. But we can try again!"
     }
 ];
 
