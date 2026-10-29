@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farming Universities</title>
+  <link rel="stylesheet" href="../CSS/universities_style.css">
+  <link rel="stylesheet" href="../CSS/login_style.css"> 
+</head>
+<body>
+  <div>
+    <h1>Accredited Farming Universities:</h1>
+    <label for="q">Filter (optional):</label>
+    <input id="q" placeholder="search by name..." />
+    <button id="exportBtn">Export CSV</button>
+    <div id="status" class="status"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Country</th>
+          <th>Site</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <script src="../JS/universities_js.js"></script>
+</body>
+</html>
