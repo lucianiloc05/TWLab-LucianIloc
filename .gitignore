@@ -59,3 +59,22 @@ $RECYCLE.BIN/
 # Temporary files
 *.tmp
 *.temp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Django
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+

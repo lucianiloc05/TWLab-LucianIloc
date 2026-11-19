@@ -1,0 +1,118 @@
+body {
+    background: linear-gradient(90deg, green, yellowgreen);
+    color: white;
+    font-family: Arial, sans-serif;
+    margin-bottom: 60px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+    background: linear-gradient(90deg, #6E260E , #DAA06D);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: lime
+}
+
+.row {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.row label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    background: white;
+    color: black;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 1px solid greenyellow;
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+}
+
+.checkbox-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn.primary {
+    background: greenyellow;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: red;
+}
+
+.btn.ghost {
+    background: transparent;
+    border: 1px solid red;
+    color: red;
+}
+
+.btn.ghost:hover {
+    background: red;
+    color: white;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    color: yellowgreen;
+}

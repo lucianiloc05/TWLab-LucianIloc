@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(90deg, green, yellowgreen);
+    color: white; 
+}
+
+.status {
+    opacity: .8;
+    margin: 8px 0;
+    color: yellow;
+}
+
+#q::placeholder {
+    color: yellow;
+    opacity: 0.7;
+}
+
+input, button {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid red;
+    background: linear-gradient(90deg, #6E260E , #DAA06D);
+    color: yellow;
+    margin-right: 8px;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background: red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: linear-gradient(90deg, rgb(147, 74, 86), rgb(212, 168, 168));
+}
+
+th, td {
+    padding: .55rem;
+    border-bottom: 1px solid black;
+    text-align: left;
+    vertical-align: top;
+}
+
+td a {
+    color: yellow;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
