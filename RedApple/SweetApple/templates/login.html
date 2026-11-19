@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/login_style.css' %}"> 
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-image">
+            <img src="{% static 'MEDIA/logo.png' %}" alt="Imagine login">
+        </div>
+        <div class="separator"></div>
+        <form class="login-form" id="loginForm">
+            {% csrf_token %}
+            <h2>Login</h2>
+            <input type="email" placeholder="enter email" id="email">
+            <input type="password" placeholder="enter password" id="password">
+            <button type="submit">Login</button>
+            <p class="register-text">
+        Nu ai cont? <a href="{% url 'register' %}">Register</a>
+        </p>
+    </form>
+    </div>
+    <script src="{% static 'JS/login_js.js' %}"></script>
+</body>
+</html>
