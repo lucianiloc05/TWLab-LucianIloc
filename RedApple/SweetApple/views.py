@@ -21,3 +21,6 @@ def chatbot(request):
 def galerie(request):
     return render(request, "./galerie.html")
 
+def naturalist_page(request):
+    return render(request, "./naturalist.html")
+

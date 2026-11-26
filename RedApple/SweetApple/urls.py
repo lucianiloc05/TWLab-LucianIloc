@@ -13,6 +13,7 @@ urlpatterns = [
     path('universities/', views.universities, name='universities'),
     path('chatbot/', views.chatbot, name='chatbot'),
     path('galerie/', views.galerie, name='galerie'),
+    path('species/', views.naturalist_page, name='naturalist_page'),
 ]
 
 if settings.DEBUG:
