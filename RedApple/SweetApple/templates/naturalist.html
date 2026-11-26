@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/naturalist_style.css' %}"> 
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/style.css' %}"> 
+    
+
+    <title>Red Apple Collection API!</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Add all other pages from your menu -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Red Apple API!</h1>
+
+        <!-- Search area -->
+        <form id="searchForm">
+            <input
+                id="queryInput"
+                type="text"
+                placeholder="Search..."
+            >
+            <button id="searchBtn" type="submit">
+                Search
+            </button>
+        </form>
+
+        <!-- Status area -->
+        <p id="status" aria-live="polite"></p>
+
+        <!-- Results area -->
+        <div id="results"></div>
+
+        <div class="back-element">
+            <a href="{% url 'home' %}" class="back-button">Back</a>
+        </div>
+    </main>
+
+    <script src="{% static 'JS/naturalist.js' %}"></script>
+</body>
+</html>
